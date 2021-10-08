@@ -244,8 +244,8 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
- /*Your Code Here*/ 
+function get20s(array) {
+  
 }
 
 
@@ -261,7 +261,7 @@ Use removeArtist to do the following:
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, number) {
-  for(let i = 0; i < array.length; i++){
+  for(let i = 0; i < array.item; i++){
     if(array[i] === number){
       array.splice(i, 1);
     }
@@ -269,7 +269,8 @@ function removeArtist(array, number) {
   return array;
 }
 
-console.log('task 5:', removeArtist(artists, 0));
+
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
 1. Receive an array
@@ -301,9 +302,10 @@ Use lotsOfArt to do the following:
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
-
 function lotsOfArt(array) {
-  /*Your Code Here*/
+  if(array >= 100){
+    return `${array.name}`
+  }
 }
 
 
